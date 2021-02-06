@@ -16,9 +16,9 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 db.init_app(app)
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
+@app.route('/api/v1/patients/', methods=['POST'])
+def create_patient():
+    return ""
 
 
 if __name__ == '__main__':
